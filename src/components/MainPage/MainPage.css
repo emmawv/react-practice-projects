@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    text-align: center
+    text-align: center;
 }
 
 .section-card img{
@@ -31,4 +31,18 @@
     width: 100%;
     letter-spacing: 3px;
     font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    text-align: center;
+    line-height: 20px;
+    padding: 70px 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eff7f8
+}
+
+hr{
+    width: 15%;
+    margin: 0 auto;
+    border: 1px solid #5EE0FA;
 }

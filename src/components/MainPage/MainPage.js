@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { Col, Row } from 'react-bootstrap'
 
 import './MainPage.css'
 import pomodoroImg from './pomodoro.png'
@@ -8,11 +7,16 @@ import markdownImg from './markdown.png'
 const MainPage = () => {
     return (
         <>
+            <header>
+                <h1>React Practice Projects</h1>
+                <p style={{color: 'grey'}}>A series of small projects developed with React</p>
+                <hr/>
+            </header>
             <Link to='/pomodoro'>
                 <section className='section-card'>
                     <img src={pomodoroImg} alt='pomodoro app' />
                     <div className='title'>
-                        <h2>Pomodoro App</h2>
+                        <h4>Pomodoro App</h4>
                     </div>
                 </section>
             </Link>
@@ -20,7 +24,7 @@ const MainPage = () => {
                 <section className='section-card'>
                     <img src={markdownImg} alt='markdown editor' />
                     <div className='title'>
-                        <h2>Markdown Editor</h2>
+                        <h3>Markdown Editor</h3>
                     </div>
                 </section>
             </Link>
