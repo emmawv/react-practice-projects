@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+.pomodoro-app{
+  font-family: 'Major Mono Display', monospace;
+  line-height: 1.5;
+  background-color: #87D6CC;
+  color: #2B6D72;
+  text-align: center;
+  padding-top: 100px;
+  height: 100vh
+}
+
+.timer{
+  font-size: 7em;
+  letter-spacing: 10px;
+}
+
+.buttons button{
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #F6FAA3;
+  border: none;
+  border-radius: 3px;
+  color: #939748
+}
+
+.buttons button:hover{
+  background-color: #dadf87;
+  border: none;
+  border-radius: 3px;
+  color: #939748
+}

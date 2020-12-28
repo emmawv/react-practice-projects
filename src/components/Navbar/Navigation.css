@@ -1,0 +1,36 @@
+.navbar{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color:white;
+    z-index: 1;
+    color: white;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    box-shadow: 1px 0 4px 1px rgb(192, 190, 190);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.navbar li{
+    margin: 0;
+    padding: 15px 38.9px;
+    transition: all 0.3s; 
+}
+
+.navbar li:hover{
+    background-color: #c9e4e1;
+    color: white
+}
+
+.navbar a{
+    display: block;
+    text-decoration: none;
+    color: #63cabe;
+}
