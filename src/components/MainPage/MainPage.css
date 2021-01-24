@@ -4,14 +4,12 @@
     overflow: hidden;
     width: 100%;
     text-align: center;
+    margin-top: 25px
 }
 
 .section-card img{
     height: 100%;
     width: 100%;
-    position: absolute;
-    top:0;
-    left:0;
     object-fit: cover;
 
     transition: all 0.3s;
@@ -45,4 +43,8 @@ hr{
     width: 15%;
     margin: 0 auto;
     border: 1px solid #5EE0FA;
+}
+
+.cards{
+    margin-left:0
 }

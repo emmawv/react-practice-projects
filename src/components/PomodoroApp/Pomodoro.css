@@ -1,13 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
 .pomodoro-app{
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Quintessential', cursive;
   line-height: 1.5;
-  background-color: #87D6CC;
-  color: #2B6D72;
+  color: black;
   text-align: center;
-  padding-top: 100px;
-  height: 100vh
+  height: 100vh;
+  padding-top: 150px;
+  z-index: 2;
+}
+
+.pomodoro-app:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.4;
+    background: url('https://res.cloudinary.com/helping-hand-web/image/upload/v1611485358/corinne-kutz-tMI2_-r5Nfo-unsplash_szxz5q.jpg') no-repeat center/cover;
 }
 
 .timer{
@@ -16,17 +29,24 @@
 }
 
 .buttons button{
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 5px;
-  background-color: #F6FAA3;
+  background-color: #B3A9A9;
   border: none;
   border-radius: 3px;
-  color: #939748
+  color: black;
+  border: 1px solid #979090
+}
+
+.buttons button:active, .buttons button:focus{
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .buttons button:hover{
-  background-color: #dadf87;
+  background-color: #c2b9b9;
   border: none;
   border-radius: 3px;
-  color: #939748
+  color: rgb(0, 0, 0, 0.4)
 }
+

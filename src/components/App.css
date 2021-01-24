@@ -7,7 +7,14 @@ a, a:hover{
     color: black
 }
 
-main{
-    margin-left: 200px;
+.menu-icon{
+    width: 45px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu-icon:hover{
+    box-shadow: lightgrey 0 0 3px 3px;
 }
 

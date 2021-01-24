@@ -1,6 +1,5 @@
 .navbar{
     position: fixed;
-    width: 200px;
     height: 100vh;
     background-color:white;
     z-index: 1;
@@ -10,6 +9,8 @@
     align-items: flex-start;
     box-shadow: 1px 0 4px 1px rgb(192, 190, 190);
     font-family: 'Montserrat', sans-serif;
+
+    transition: all 0.3s;
 }
 
 .navbar ul{

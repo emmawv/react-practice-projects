@@ -19,9 +19,36 @@ export default function PomodoroApp() {
         if (interval.current !== null) return
 
         interval.current = setInterval(() => {
-            setTimeLeft(timeLeft => timeLeft >= 1 ? timeLeft - 1 : resetTimer())
+            setTimeLeft(timeLeft => timeLeft >= 1 ? timeLeft - 1 : restTime())
             setTitle("Let's go!")
             setIsRunning(true)
+        }, 1000)
+    }
+
+    const restTime = () => {
+
+        clearInterval(interval.current)
+        interval.current = null
+
+        setTimeLeft(5 * 60)
+        startRest()
+    }
+
+    const prepareStart = () => {
+        clearInterval(interval.current)
+        interval.current = null
+
+        setTimeLeft(25 * 60)
+        startTimer()
+    }
+
+    const startRest = () => {
+        if (interval.current !== null) return
+
+        interval.current = setInterval(() => {
+            setTitle('Good job! Time to rest for 5 min.')
+            setIsRunning(true)
+            setTimeLeft(timeLeft => timeLeft >= 1 ? timeLeft - 1 : prepareStart())
         }, 1000)
     }
 
@@ -52,21 +79,20 @@ export default function PomodoroApp() {
         <div className="pomodoro-app">
             <h2>{title}</h2>
 
-            <div className='timer'>
+            <section className='timer'>
                 <span>{minutes}</span>
                 <span>:</span>
                 <span>{seconds}</span>
-            </div>
+            </section>
 
-            <div className='buttons'>
+            <section className='buttons'>
                 {!isRunning ?
                     <button onClick={startTimer}>Start</button>
                     :
                     <button onClick={stopTimer}>Stop</button>
                 }
                 <button onClick={resetTimer}>Reset</button>
-            </div>
-
+            </section>
         </div>
     );
 }
